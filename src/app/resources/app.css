@@ -1,6 +1,0 @@
-@import '../../dojo/resources/dojo.css';
-@import 'zyme/zyme.css';
-@import '../../dgrid/css/dgrid.css';
-@import 'css/custom.css';
-@import 'css/tls.css';
-html,body{height:100%;margin:0;padding:0}.loading{font-size:1.5em;text-align:center;}.loaded .loading{display:none}
