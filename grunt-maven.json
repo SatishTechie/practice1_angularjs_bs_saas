@@ -1,0 +1,10 @@
+{
+    "filesToWatch": "/home/satish/workspace/eclipsws/sso_401/sso-landing-app/src/main/webapp/src/main/webapp/html_ui/src/**",
+    "directoryToWatch": "/home/satish/workspace/eclipsws/sso_401/sso-landing-app/src/main/webapp/src/main/webapp/html_ui/src",
+    "projectRootPath": "/home/satish/workspace/eclipsws/sso_401/sso-landing-app",
+    "targetPath": "/home/satish/workspace/eclipsws/sso_401/sso-landing-app/target",
+    "sourceDirectory": "src/main/webapp",
+    "jsSourceDirectory": "src/main/webapp/html_ui/src",
+    "warTargetDirectory": "src/main/webapp/html_ui/src",
+    "filteredFiles": ["**/node_modules.tar", "maven-properties.json"]
+}

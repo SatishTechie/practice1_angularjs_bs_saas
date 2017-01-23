@@ -1,0 +1,5 @@
+.zyme .dijitTabContainerTop-tabs .dijitTabRtl,
+.zyme .dijitTabContainerBottom-tabs .dijitTabRtl {
+  margin-right: 0;
+  margin-left: 1px;
+}

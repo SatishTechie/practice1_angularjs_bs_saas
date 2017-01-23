@@ -1,0 +1,26 @@
+.zyme .dijitSliderRtl .dijitSliderProgressBarH,
+.zyme .dijitSliderRtl .dijitSliderRemainingBarH,
+.zyme .dijitSliderRtl .dijitSliderLeftBumper,
+.zyme .dijitSliderRtl .dijitSliderRightBumper,
+.zyme .dijitSliderRtl .dijitSliderTopBumper {
+  background-position: top right;
+}
+.zyme .dijitSliderRtl .dijitSliderProgressBarV,
+.zyme .dijitSliderRtl .dijitSliderRemainingBarV,
+.zyme .dijitSliderRtl .dijitSliderBottomBumper {
+  background-position: bottom right;
+}
+.zyme .dijitSliderRtl .dijitSliderLeftBumper {
+  border-left-width: 0;
+  border-right-width: 1px;
+}
+.zyme .dijitSliderRtl .dijitSliderRightBumper {
+  border-left-width: 1px;
+  border-right-width: 0;
+}
+.zyme .dijitSliderRtl .dijitSliderIncrementIconH {
+  background-position: -357px 50%;
+}
+.zyme .dijitSliderRtl .dijitSliderDecrementIconH {
+  background-position: -251px 50%;
+}

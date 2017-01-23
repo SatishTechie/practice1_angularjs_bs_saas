@@ -1,0 +1,30 @@
+.inv-sales-clone-container {
+    display: inline-block;
+    position: relative;
+    top: 8px;
+}
+
+.content-left {
+    position: relative !Important;
+}
+
+.inv-sales-clear {
+	display: none;
+}
+
+.loading-container {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 200;
+    display: none;
+}
+
+#content .inv-sales-clone-container {
+	display: none !important;
+}

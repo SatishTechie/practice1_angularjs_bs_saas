@@ -1,0 +1,93 @@
+/* TitlePane and Fieldset
+ * 
+ * Styling TitlePane means styling the TitlePane title and its content container  (dijitTitlePane)
+ * 
+ * TitlePane title:
+ * 1. TitlePane title (default styling): 
+ * 		.dijitTitlePaneTitle - TitlePane's title div style: background-color, border
+ *
+ * 2. hovered TitlePane title (ie, mouse hover on a title bar)
+ * 		.dijitTitlePaneTitleHover - styles when mouse hover on the title div
+ * 
+ * 3. active TitlePane title (ie, mouse down on a title bar)
+ * 		.dijitTitlePaneTitleActive - styles when mouse down on the title div
+ * 
+ * 
+ * TitlePane Content Container:
+ * 1. outer/inner container: 
+ * 		.dijitTitlePaneContentOuter / dijitTitlePaneContentInner - styles for the content outer div
+ */
+.zyme .dijitTitlePaneTitle {
+  background-color: #efefef;
+  background-image: url("images/standardGradient.png");
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  _background-image: none;
+  border: 1px solid #cccccc;
+  padding: 0 7px 3px 7px;
+  min-height: 17px;
+  color: #494949;
+}
+.zyme .dijitFieldset {
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.zyme .dijitTitlePaneTitleOpen,
+.zyme .dijitTitlePaneTitleFixedOpen {
+  background-color: #cccccc;
+  color: #333333;
+}
+.zyme .dijitTitlePaneTitleHover {
+  background-color: #cccccc;
+  border-color: #cccccc;
+}
+.zyme .dijitTitlePaneTitleActive {
+  background-color: #cccccc;
+  border-color: #cccccc;
+  background-image: url("images/activeGradient.png");
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(rgba(190, 190, 190, 0.98) 0px, rgba(255, 255, 255, 0.65) 3px, rgba(255, 255, 255, 0) 100%);
+  background-image: -webkit-linear-gradient(rgba(190, 190, 190, 0.98) 0px, rgba(255, 255, 255, 0.65) 3px, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-linear-gradient(rgba(190, 190, 190, 0.98) 0px, rgba(255, 255, 255, 0.65) 3px, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(rgba(190, 190, 190, 0.98) 0px, rgba(255, 255, 255, 0.65) 3px, rgba(255, 255, 255, 0) 100%);
+  _background-image: none;
+}
+.zyme .dijitTitlePaneTitleFocus {
+  margin-top: 3px;
+  padding-bottom: 2px;
+}
+.zyme .dijitTitlePane .dijitArrowNode,
+.zyme .dijitFieldset .dijitArrowNode {
+  background-image: url("images/spriteArrows.png");
+  background-repeat: no-repeat;
+  height: 8px;
+  width: 7px;
+}
+.zyme .dijitTitlePaneTitleOpen .dijitArrowNode,
+.zyme .dijitFieldsetTitleOpen .dijitArrowNode {
+  background-position: 0 0;
+}
+.zyme .dijitTitlePaneTitleClosed .dijitArrowNode,
+.zyme .dijitFieldsetTitleClosed .dijitArrowNode {
+  background-position: -14px 0;
+}
+.zyme .dijitTitlePaneContentOuter {
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-top: none;
+}
+.zyme .dijitTitlePaneContentInner {
+  padding: 10px;
+}
+.zyme .dijitFieldsetContentInner {
+  padding: 4px;
+}
+.zyme .dijitTitlePaneTextNode,
+.zyme .dijitFieldsetLegendNode {
+  margin-left: 4px;
+  margin-right: 4px;
+  vertical-align: text-top;
+}

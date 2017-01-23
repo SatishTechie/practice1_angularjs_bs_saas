@@ -1,0 +1,4 @@
+
+define("app/resources/zyme/compile",["dojo","dijit","dojox"],function(m,n,p){var b=require("fs"),d=require("path"),e=require("../../../util/less/lib/less"),c={compress:!1,optimization:1,silent:!1};[].concat(b.readdirSync("."),b.readdirSync("form").map(function(a){return"form/"+a}),b.readdirSync("layout").map(function(a){return"layout/"+a})).filter(function(a){return a&&"variables.less"!=a&&/\.less$/.test(a)}).forEach(function(a){b.readFile(a,"utf-8",function(f,g){f&&process.exit(1);(new e.Parser({paths:[d.dirname(a)],
+optimization:c.optimization,filename:a})).parse(g,function(h,d){if(h)e.writeError(h,c),process.exit(1);else try{var f=d.toCSS({compress:c.compress}),g=a.replace(".less",".css"),k=b.openSync(g,"w");b.writeSync(k,f,0,"utf8")}catch(l){e.writeError(l,c),process.exit(2)}})})})});
+//# sourceMappingURL=compile.js.map

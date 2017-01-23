@@ -1,0 +1,101 @@
+.cdd {
+    display: inline-block;
+    //box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    overflow: hidden;
+    min-height: 42px;
+    background: white;
+    position: absolute;
+    z-index: 100;
+}
+.cdd .dijitTextBox {
+    width: 230px;
+}
+.cdd .cdd-mn  {
+    display: inline-block;
+    width: 89%;
+    padding: 0 5px;
+    border: 1px solid rgb(204, 204, 204);
+    border-bottom: none;
+    margin-left: 10px;
+}
+
+.cdd .hd {
+    display: inline-block;
+    width: 94%;
+    font: normal 12px arial;
+}
+
+.cdd .ic {
+    position: relative;
+    display: inline;
+    right: 0;
+    font: bold 11px arial;
+    cursor: pointer;
+}
+
+.cdd .dd {
+    padding: 0 5px;
+}
+
+.dd .dijitTextBox {
+    border-radius: 5px;
+    border: 1px solid #e2e2e2;
+}
+
+.dd span.dijitPlaceHolder.dijitInputField {
+    font: italic 12px arial;
+}
+.dd .dijitTextBox .dijitSpinnerButtonContainer,
+.dd .dijitTextBox .dijitArrowButtonContainer,
+.dd .dijitValidationTextBox .dijitValidationContainer {
+    float: right;
+    display: none;
+    text-align: center;
+}
+
+.dd .dijitReset.dijitInputField.dijitInputContainer {
+    padding: 0 3px;
+    border-top: none;
+}
+
+.dd-lb-mn {
+     display: inline-block;
+  width: 250px;
+  margin: -5px;
+  position: relative;
+  padding: 3px;
+  font: 12px bold arial;
+}
+
+.dd-lb-mn:hover {
+    background: #F6D69A;
+    color: black;
+}
+
+.dd-lb-mn .dd-lb-hd {
+    display: inline-block;
+    width: 50px;
+}
+
+.dd-lb-mn .dd-lb-vl {
+    display: inline;
+    position: absolute;
+    text-overflow: ellipsis;
+    width: 150px;
+    overflow: hidden;
+}
+
+.odd {
+    background: #f7f7f7;
+}
+/*  Define the background color for all the EVEN background rows  */
+
+.even {
+    background: #fff;
+}
+
+.dijitMenuItemSelected > div.odd, .dijitMenuItemSelected > div.even {
+    color: black;
+    background: #F6D69A;
+}

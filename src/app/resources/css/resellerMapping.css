@@ -1,0 +1,378 @@
+/* Datagrid styles - start */
+.resellerMappingGrid .dojoxGridContent>div {
+    position: inherit !important;
+}
+
+.resellerMappingGrid {
+    width: 99% !important;
+    //height: 100% !important;
+    max-height: 270px;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    background: white;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    top: 30px;
+}
+
+.resellerMappingGrid .dojoxGridHeader {
+    left: 0 !important;
+}
+
+.resellerMappingGrid .dojoxGridHeader,.resellerMappingGrid .dojoxGridHeader .dojoxGridRowTable,.resellerMappingGrid .dojoxGridMasterView table.dojoxGridRowTable,.resellerMappingGrid .dojoxGridHeader div,.resellerMappingGrid .dojoxGridMasterView div
+{
+    width: 100% !important;
+    font: 12px arial;
+}
+
+.resellerMappingGrid .dojoxGridMasterView .dojoxGridView {
+    top: 33px !important;
+}
+
+.resellerMappingGrid .dojoxGridMasterView .dojoxGridContent {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.dojoxGridRowTable td,.dojoxGridRowTable th,.dojoxGridRow {
+    border: 0px !important;
+}
+
+.dojoxGridHeader .dojoxGridCell {
+    font-weight: normal !important;
+    color: #C0C0C0 !important;
+    font: bold 12px arial !important;
+}
+
+.dojoxGridContent .dojoxGridCell {
+    font: 12px arial !important;
+}
+
+.dojoxGrid .dojoxGridCell {
+    padding: 8px 2px !important;
+}
+
+.resellerMappingGrid .dojoxGridHeader, .resellerMappingGrid .dojoxGridHeader .dojoxGridCell
+{
+    background: linear-gradient(#E4E2DF,#DDDAD6) !important;
+    font-weight: bold !important;
+	color: #333333 !important;
+}
+
+.resellerMappingGrid .dojoxGridRow.dojoxGridRowEven {
+	background: rgba(0, 0, 0, 0);
+}
+
+.resellerMappingGrid .dojoxGridRow.dojoxGridRowOdd {
+	background: #F7F7F6;
+}
+
+.sortImage {
+    position: relative;
+    top: 3px;
+    left: 3px;
+    cursor: default !important;
+}
+
+.dojoxGridColCaption {
+    display: inline !important;
+}
+
+.resellerMappingGrid .dojoxGridMasterView {
+    position: static !important; 
+}
+
+.dojoxGrid .dojoxGridSortNode,.dojoxGridColNoResize,.dojoxGridColNoResize .dojoDndItemOver
+{
+    cursor: default !important;
+}
+
+.resellerMappingNode {
+	position: relative;
+	height: 340px;
+	top: 30px;
+	width: 99%;
+	padding: 4px;
+}
+
+.mappingInputsContainer{
+	position: absolute;
+	z-index: 100;
+	width: 99%;
+}
+
+.mappingInputsContainer input[type="text"], .mappingInputsContainer select {
+	border: 1px solid #CCCCCC;
+}
+
+.mappingInputsContainer .rm-businessName {
+	width: 19%;
+	margin-left: 0px;
+}
+
+.mappingInputsContainer .rm-address1 {
+	width: 15%;
+}
+
+.mappingInputsContainer .rm-address2 {
+	width: 12%;
+} 
+
+.mappingInputsContainer .rm-city {
+	width: 10%;
+}
+
+.mappingInputsContainer .rm-state {
+	width: 13%;
+}
+
+.mappingInputsContainer .rm-zipCode {
+	width: 10%;
+}
+
+.mappingInputsContainer .rm-country {
+	width: 15%;
+} 
+
+.mappingControlsContainer {
+	width: 100%;
+	height: 35px;
+	position: absolute;
+	bottom: 0px;
+	z-index: 100;
+}
+
+.mappingControlsContainer div {
+	display: inline-block;
+}
+
+.mappingControlsContainer .rm-left{
+	position: absolute;
+}
+
+.mappingControlsContainer .rm-right{
+	position: absolute;
+	right: 2px;
+}
+
+.mappingControlsContainer .rm-right div{
+	padding-right: 5px
+}
+
+.resellerMappingDialog {
+	width: 880px;
+	min-width: 700px;
+	border: 1px solid rgb(94, 66, 66);
+	border-radius: 4px;
+	padding: 10px;
+	background: white;
+}
+
+.row-address .dijitValidationTextBox {
+	width: 300px !important;
+}
+
+.add-mapping {
+	position: relative;
+	height: 230px;
+}
+
+.row-address .dijitValidationTextBox.businessName {
+	width: 633px !important;
+}
+
+.row-address {
+	position: relative;
+	height: 50px;
+	//left: 5%;
+}
+
+.left-content, .right-content {
+	position: absolute;
+	width: 50%;
+}
+
+.left-content {
+	left: 0px;
+}
+
+.right-content {
+	right: 0px;
+}
+
+.rm-stack-container {
+}
+
+.rm-stack-container .dijitStackContainerChildWrapper, .rm-stack-container .dijitContentPane {
+	width: 100% !important;
+	height: 100% !important;
+	overflow: hidden;
+}
+
+.resellerMappingDialog  .dijitDialogTitle {
+	color: #333333;
+	font-size: 14px;
+	font-family: 'Lucida Sans Unicode';
+}
+
+.dijitDialogCloseIcon {
+    background: url("images/dialogCloseIcon.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 5px;
+	height: 15px;
+	width: 21px;
+	top: 8px;
+}
+
+.zyme .dijitDialog {
+	border: 1px solid #cccccc;
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+	border-radius: 5px 5px 0px 0px;
+	overflow: hidden;
+	padding: 0px;
+}
+
+.zyme .dijitDialogTitleBar {
+font-family: Arial;
+border-top: none;
+background: linear-gradient(#e4e2df, #dddad6);
+margin: 0px;
+padding: 8px 7px;
+border-radius: 3px 3px 0px 0px;
+}
+
+.zyme .dijitDialogPaneContent {
+background: #ffffff repeat-x top left;
+border-top: 1px solid #cccccc;
+/*padding: 15px 15px;*/
+position: relative;
+overflow: none;
+}
+
+.dijitDialogPaneContent, .dijitDialogFixed {
+background: #fff !important;
+}
+
+.zyme .dijitDialogTitle {
+padding: 0 1px;
+font-family: Arial;
+font-size: 18px;
+color: #333333;
+}
+
+.dijitDialogTitle {
+font-size: 14px !important;
+font-family:'Lucida Sans Unicode' !important;
+}
+
+.resellerMappingGrid.dojoxGrid .dojoxGridCell {
+border-color: #ccc !important;
+text-overflow: ellipsis !important;
+white-space: pre !important;
+border: none !important;
+border-right: 1px solid #ccc !important;
+}
+
+.resellerMappingGrid .dojoxGridRowOver {
+	background: #fef3dc !important;
+}
+
+
+.resellerMappingGrid .dojoxGridRowSelected {
+    background: #F6D69A !important;
+}
+
+.progressContainer, .dgrid-no-data {
+	height: 36px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 100;
+}
+
+.dgrid-no-data {
+	width: 200px;
+	text-align: center;
+}
+
+.rm-seacrh {
+	display: inline-block;
+	position: relative;
+  	bottom: 3px;
+}
+
+.rm-clear-div{
+	position: relative;
+  	bottom: 3px;
+  	display: inline-block;
+}
+
+.dojoxGridMasterMessages {
+	  background-color: #EBEADB !important;	
+}
+
+.resellerMappingGrid .dgrid-scroller {
+	margin-top: 24px !important;
+}
+
+.add-mapping .mappingControlsContainer .rm-right {
+  right: 20px;
+}
+
+div.SKUResellerMappingContainer {
+	height: 335px;
+}
+
+.add-mapping .mappingControlsContainer {
+	bottom: -5px;
+	width: 100%;
+}
+
+/ dgrid styles /
+.dgrid-row {
+    height: 25px;
+    overflow: hidden;
+}
+.dgrid-cell {
+    border-color: #ccc;
+    text-overflow: ellipsis;
+    white-space: pre;
+    border:none;
+    border-right:1px solid #ccc;
+}
+.dojoDndItemOver{padding:0px;}
+.dojoDndItem{padding:0px;}
+
+.dgrid-header th[role="columnheader"], .dgrid-header th[role="columnheader"]:hover {
+    background:linear-gradient(#E4E2DF,#DDDAD6);    
+    cursor: pointer;    
+}
+
+.dgrid-row:hover{
+    background:#FCEBCF !important;
+}
+.dgrid-selected, .dgrid-selected:hover{
+    background:#F6D69A !important;   
+}
+.dgrid-row-odd {
+    background: #F7F7F6;
+}
+
+.rm-businessName .dijitPlaceHolder {
+	 left: 2px;
+ 	 top: -1px;
+}
+
+.col-vl.billToContainer > .dijitTextAreaFocused, .col-vl.shipToContainer > .dijitTextAreaFocused {
+    border: 1px solid #cccccc !important;
+}
+
+.col-vl.billToContainer > .dijitTextArea.addressError, .col-vl.shipToContainer > .dijitTextArea.addressError {
+    border: 1px solid #D46464 !important;
+}

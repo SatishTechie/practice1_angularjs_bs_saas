@@ -1,0 +1,331 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#loaderDiv {
+    font-size: 25px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    line-height: 30px;
+    transform: translate(-50%, -50%);
+    z-index: 12;
+}
+
+#loadingProgressG {
+    width: 290px;
+    height: 5px;
+    overflow: hidden;
+    background-color: #AEAEC4;
+    border-radius: 5px;
+}
+.loadingProgressG {
+    background-color: #0B5799;
+    margin-top: 0;
+    margin-left: -290px;
+    animation-name: bounce_loadingProgressG;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    width: 290px;
+    height: 5px;
+}
+@keyframes bounce_loadingProgressG {
+    0% {
+        margin-left: -290px;
+    }
+    100% {
+        margin-left: 290px;
+    }
+}
+.btn {
+    padding: 3px 5px;
+    text-decoration: none;
+    background-color: #F4F4F4;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    display: inline-block;
+    color: #000;
+    font-weight: bold;
+}
+.dijitTextBoxFocused {
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
+#topPane {
+    padding-left: 50px;
+    background-color: rgb(0, 0, 0);
+}
+
+#centerPane {
+	overflow: auto !important;
+	padding: 0px !important;	
+	width: 970px !important;
+	position: relative !important;
+	top: 0px !important;
+	margin: 0px auto;
+}
+
+#buttonBarPane {
+	width: 100% !important;
+	position: relative !important;
+	top: 0px !important;
+	height: 40px !important;
+}
+
+.logo {
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFF;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 80px;
+    background: none repeat scroll 0% 0% #000;
+    height: 30px;
+    text-decoration: none;
+    padding: 0px 3px 2px 5px;
+}
+.zyme .dijitMenuBar {
+    border: 0px solid red;
+    height: 30px;
+    //box-sizing: border-box;
+}
+.smallTitleBar .dijitDialogTitle {
+    font-size: 12px;
+}
+/*** Breadcrumb start ***/
+
+#breadCrumbPane {
+    background: #E7E3E0;
+}
+
+#mainMenuBar  {
+	//width: 970px !important;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+
+#topPane, #breadCrumbPane, #reviewActionPanel {
+    overflow: hidden;
+    width: 100% !important;
+    position: relative !important;
+    top: 0px !important;
+    
+}
+#loadingDialog {
+    z-index: 999;
+}
+/*** Breadcrumb end ***/
+/** dgrid styles **/
+
+.renderedCell {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+}
+.dgrid-row {
+    height: 25px;
+    overflow: hidden;
+}
+#searchPanel .dgrid-content div[role="row"]:nth-last-child(2) {
+    border-bottom: 1px solid #ccc;
+}
+#masterPageContainer .dgrid-content div[role="row"]:nth-last-child(1) {
+    border-bottom: 1px solid #ccc;
+}
+.dgrid-cell-editing {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+.dgrid-cell-editing .dijitInputField, .dgrid-cell-editing .dijitTextBox {
+    margin: 0px !important;
+    padding: 0px !important;
+    border-radius: 0px !important
+}
+#masterPageContainer .dgrid-cell-editing .dijitTextBox {
+    height: 20px;
+}
+.dgrid-cell-editing input[type="text"], .dgrid-cell-editing .dijitTextBox {
+    box-sizing: border-box;
+    border: 0px solid #ccc !important;
+    height: 25px !important;
+    padding-left: 2px !important;
+}
+.dgrid-cell-editing .dijitTextBox {
+    border-radius: 0px !important;
+    border: 0px solid #ccc;
+}
+.dgrid-cell {
+    border-color: #ccc;
+    text-overflow: ellipsis;
+    white-space: pre;
+    border: none;
+    border-right: 1px solid #ccc;
+}
+.dojoDndItemOver {
+    padding: 0px;
+}
+.dojoDndItem {
+    padding: 0px;
+}
+#reviewPageContainer .dgrid-header th.reported-detail, #reviewPageContainer .dgrid-header th.reported-detail {
+    background: #5696c0;
+    border-color: #5696c0;
+    color: #fff;
+}
+.dgrid-header th[role="columnheader"], .dgrid-header th[role="columnheader"]:hover {
+    background: linear-gradient(#E4E2DF, #DDDAD6);
+    cursor: pointer;
+}
+.reviewItem .dgrid-header th[role="columnheader"], .reviewItem .dgrid-header th[role="columnheader"]:hover {
+    background: linear-gradient(#FDFDFD, #D5D5D5);
+    cursor: pointer;
+    border-bottom: 1px solid #696969;
+}
+.dgrid-row:hover {
+    background: #FCEBCF !important;
+}
+.inlineEditorContainer .dgrid-row:hover {
+    background: #FFF !important;
+}
+.dgrid-selected, .dgrid-selected:hover {
+    background: #F6D69A !important;
+}
+.inlineEditorContainer .dgrid-selected, .inlineEditorContainer .dgrid-selected:hover {
+    background: #FFF !important;
+}
+.dgrid-row-odd {
+    background: #F7F7F6;
+}
+.edited .renderedCell, div.edited {
+    color: #FF8C00;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+html[xmlns] .clearfix {
+    display: block;
+}
+* html .clearfix {
+    height: 1%;
+}
+/*** Help Panel ***/
+
+.zyme .helpPanel {
+    padding-top: 10px;
+}
+/** Table design **/
+
+table.zyme-table {
+    overflow: hidden;
+    border: 1px solid #d3d3d3;
+    background: #fefefe;
+    border-radius: 5px;
+}
+table.zyme-table th, table.zyme-table td {
+    padding: 4px;
+    text-align: left;
+}
+table.zyme-table th {
+    background: #e8eaeb;
+}
+table.zyme-table tr:nth-child(even) {
+    background: #f6f6f6
+}
+table.zyme-table tr:nth-child(odd) {
+    background: #FFF
+}
+table.zyme-table td.last {
+    border-right: none;
+}
+table.zyme-table tr.odd-row td {
+    background: -moz-linear-gradient(100% 25% 90deg, #f6f6f6, #f1f1f1);
+    background: -webkit-gradient(linear, 0% 0%, 0% 25%, from(#f1f1f1), to(#f6f6f6));
+}
+table.zyme-table th {
+    background: -moz-linear-gradient(100% 20% 90deg, #e8eaeb, #ededed);
+    background: -webkit-gradient(linear, 0% 0%, 0% 20%, from(#ededed), to(#e8eaeb));
+}
+.float {
+    position: absolute;
+}
+#mainContainer .dijitMenuPopup {
+    height: 50px;
+    overflow: auto;
+}
+/*** Inline Editor ***/
+
+.zyme .dijitTooltipContents .dijitTextArea {
+    width: auto;
+}
+.reviewItem .inlineEditorContainer .dgrid-content, .reviewItem .inlineEditorContainer .dgrid {
+    min-height: 25px;
+    height: 25px;
+}
+.dgrid-row .dgrid-row-table .field-flag {
+    padding: 1px 0px;
+}
+table tr[aria-label="Select Action"], table tr[aria-label="Select Action "] {
+    display: none;
+}
+/*** others ***/
+
+#brwoserNotification {
+    position: absolute;
+    bottom: -30px;
+}
+#brwoserNotification .browser-icon {
+    height: 16px;
+    display: inline-block;
+    padding-left: 20px;
+    margin-right: 10px;
+}
+#brwoserNotification .browser-icon:first-child {
+    margin-left: 10px;
+}
+#brwoserNotification .ie {
+    background: url('images/ie.png') top left no-repeat;
+}
+#brwoserNotification .chrome {
+    background: url('images/chrome.png') top left no-repeat;
+}
+#brwoserNotification .firefox {
+    background: url('images/firefox.png') top left no-repeat;
+}
+.zyme .dijitMenuBar .dijitMenuItemHover, .zyme .dijitMenuBar .dijitMenuItemSelected {
+    color: #ffffff;
+    padding: 6px 10px;
+}
+
+#subContainer {
+  width: 100%;
+  margin: 0px auto;
+  position: relative;
+}
+
+#commonMessageContainer .msg-body a {
+	text-decoration: none !important;
+}
+
+
+
+/* UI Review Comments Fixes */
+/*
+.partner-view > .pg-dv, #content > div > .pg-dv {
+    height: 60px;
+}*/

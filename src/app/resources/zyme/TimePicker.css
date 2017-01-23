@@ -1,0 +1,95 @@
+/* Time Picker 
+ *
+ * Styling the Time Picker consists of the following: 
+ *
+ * 1. minor time values
+ * 		.dijitTimePickerTick - set text color, size, background color of minor values
+ * 		.dijitTimePickerTickHover - set hover style of minor time values
+ * 		dijitTimePickerTickSelected - set selected style of minor time values
+ *
+ * 2. major time values - 1:00, 2:00, times on the hour 
+ * 		set text color, size, background color, left/right margins for "zoom" affect
+ * 		.dijitTimePickerMarkerHover - to set hover style of major time values
+ * 		.dijitTimePickerMarkerSelected - set selected style of major time values
+ * 
+ * 3. up and down arrow buttons
+ * 		.dijitTimePicker .dijitButtonNode - background-color, border
+ * 		.dijitTimePicker .dijitUpArrowHover, .dijitTimePicker .dijitDownArrowHover - set background-color for hover state
+ *
+ *	Other classes provide the fundamental structure of the TimePicker and should not be modified. 
+ */
+/* override Button.css */
+.zyme .dijitTimePicker .dijitButtonNode {
+  padding: 0 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.zyme .dijitTimePicker {
+  border: 1px #cccccc solid;
+  border-top: none;
+  border-bottom: none;
+  background-color: #fff;
+  /* TODO: useless?   Appears to be overridden by settings on individual elements */
+
+}
+.zyme .dijitTimePickerItem {
+  /* dijitTimePickerItem refers to both Tick's (minor values like 2:15, 2:30, 2:45) and Marker's (major values like 2PM, 3PM) */
+
+  border-top: solid 1px #cccccc;
+  border-bottom: solid 1px #cccccc;
+  margin-top: -1px;
+}
+.zyme .dijitTimePickerTick {
+  /* minor value */
+
+  color: #818181;
+  font-size: 0.818em;
+}
+.zyme .dijitTimePickerMarker {
+  /* major value - 1:00, 2:00, times on the hour */
+
+  font-size: 1em;
+  white-space: nowrap;
+}
+.zyme .dijitTimePickerTickHover,
+.zyme .dijitTimePickerMarkerHover,
+.zyme .dijitTimePickerMarkerSelected,
+.zyme .dijitTimePickerTickSelected {
+  background-color: #50b2ea;
+  color: #ffffff;
+}
+.zyme .dijitTimePickerMarkerSelected,
+.zyme .dijitTimePickerTickSelected {
+  font-size: 1em;
+}
+.zyme .dijitTimePickerTick .dijitTimePickerItemInner {
+  padding: 1px;
+  margin: 0;
+}
+.zyme .dijitTimePicker .dijitButtonNode {
+  border-left: none;
+  border-right: none;
+  border-color: #cccccc;
+}
+.zyme .dijitTimePicker .dijitArrowButtonInner {
+  height: 100%;
+  /* hack zyme.button.css */
+
+  background-image: url("form/images/commonFormArrows.png");
+  background-repeat: no-repeat;
+  background-position: -140px 45%;
+}
+.zyme .dijitTimePicker .dijitDownArrowButton .dijitArrowButtonInner {
+  background-position: -35px 45%;
+}
+/* hover */
+.zyme .dijitTimePicker .dijitUpArrowHover,
+.zyme .dijitTimePicker .dijitDownArrowHover {
+  background-color: #ececec;
+}
+.zyme .dijitTimePicker .dijitUpArrowHover .dijitArrowButtonInner {
+  background-position: -175px 45%;
+}
+.zyme .dijitTimePicker .dijitDownArrowHover .dijitArrowButtonInner {
+  background-position: -70px 45%;
+}

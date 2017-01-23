@@ -1,0 +1,57 @@
+/* Editor 
+ * 
+ * Styling Editor means styling the Editor inside iframe container (dijitEditorIFrameContainer)
+ * 
+ * 1. Editor iframe container (default styling): 
+ * 		.dijitEditorIFrameContainer - normal state styles: background-color, border, padding
+ *
+ * 2. hovered Editor iframe container (ie, mouse hover on editor)
+ * 		.dijitEditorHover .dijitEditorIFrameContainer/dijitEditorIFrame - styles when mouse hover on the container
+ * 
+ * 3. focused Editor iframe container (ie, mouse focus on the editor pane)
+ * 		.dijitEditorFocused .dijitEditorIFrameContainer/dijitEditorIFrame - styles when container focused
+ * 
+ * 3. disabled Editor iframe container 
+ * 		.dijitEditorDisabled - editor's inner iframe container disable status styles: background, border
+ */
+
+@import "variables";
+
+.zyme .dijitEditorIFrameContainer{
+	padding:3px 3px 1px 10px;
+}
+.zyme .dijitEditorIFrame {
+	background-color: @textbox-background-color;
+}
+.zyme .dijitEditor {
+	border: 1px solid @border-color;
+}
+.zyme .dijitEditor .dijitEditorIFrameContainer{
+	background-color: @textbox-background-color;
+	background-repeat:repeat-x;
+}
+.zyme .dijitEditorHover .dijitEditorIFrameContainer,
+.zyme .dijitEditorHover .dijitEditorIFrameContainer .dijitEditorIFrame{
+	background-color: @textbox-hovered-background-color;
+}
+.zyme .dijitEditorFocused .dijitEditorIFrameContainer,
+.zyme .dijitEditorFocused .dijitEditorIFrameContainer .dijitEditorIFrame{
+	background-color: @textbox-focused-background-color;
+}
+.zyme .dijitEditorHover .dijitEditorIFrameContainer,
+.zyme .dijitEditorFocused .dijitEditorIFrameContainer {
+	.textbox-background-image;
+}
+
+/* Disabled */
+.zyme .dijitEditorDisabled {
+	border: 1px solid @disabled-border-color;
+	color: @disabled-text-color;
+}
+
+.zyme .dijitDisabled .dijitEditorIFrame,
+.zyme .dijitDisabled .dijitEditorIFrameContainer,
+.zyme .dijitDisabled .dijitEditorIFrameContainer .dijitEditorIFrame {
+	background-color: @textbox-disabled-background-color;
+	background-image: none;
+}

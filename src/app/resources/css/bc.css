@@ -1,0 +1,52 @@
+
+.bc{
+    display: inline-block;
+    overflow: hidden;
+    float: left;
+    height: 30px;
+    padding: 0px 3px 2px 5px;
+}
+
+.bc a {
+    display: block;
+    float: left;
+    text-decoration: none;
+    padding: 0 0 0 20px;
+    line-height: 30px;
+    background: #e2e2e2;
+    color: #333;
+    height: 30px;
+}
+.bc > a > span {
+    background: url("images/breadcrumb_sep.png") no-repeat scroll right top rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    display: inline-block;
+    height: 30px;
+    padding: 9px 10px 9px 5px;
+    position: absolute;
+}
+.bc a:first-child {
+    padding: 0 2px 0 0;
+}
+.bc a.active{
+    cursor: default;
+}
+
+.bc a.bcanc {
+    text-decoration: none;
+    color: #1B93D7;
+}
+
+.bc > a:last-child > span {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.bc  {
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 970px;
+}

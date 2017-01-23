@@ -1,0 +1,55 @@
+/* ======= Styling for the document itself (overriding dojo.css) ======== */
+
+@import "variables";
+@import url("../../../dojo/resources/dojo.css");
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+@font-face {
+    font-family: 'Lucida Grande';
+    src: url(images/6216.ttf);
+}
+.zyme {
+  font-family: 'Lucida Grande', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: @document-text-color;
+}
+tr td, label{font-family: Arial;}
+/* Headings */
+.zyme h1 {
+	font-size: 1.545em; 
+	margin-bottom:0.727em;
+}
+.zyme h2 { 
+	font-size: 1.364em; 
+	line-height: 1.455em; 
+	margin-top:1em; 
+	margin-bottom:0.60em;
+	font-weight: normal;
+}
+.zyme h3, .zyme h4, .zyme h5, .zyme h6 {
+	font-size:1.091em; 
+	font-weight: normal; 
+}
+
+/* paragraphs, quotes and lists */
+.zyme p { 
+	line-height: 1.3em;
+}
+
+/* pre and code */
+.zyme pre, .zyme code { 
+	font-family:inherit; 
+	background-color: @document-shadedsection-background-color; 
+	border: 1px solid @document-border-color;
+}
+
+/* tables */
+.zyme table.dojoTabular thead, .zyme table.dojoTabular tfoot { 
+	background-color: @document-shadedsection-background-color; 
+	border: 1px solid @document-border-color; 
+}
