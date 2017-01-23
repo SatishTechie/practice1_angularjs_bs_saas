@@ -19,7 +19,7 @@ Run
 
 ## Testing
 
-http://localhost:8888/yo/myApp/dist/index.html
+http://localhost:8888/myApp/dist/index.html
 
 ## CORS handling
 To handle Crossdomain issue api should support JSONP or else it should set CORS on the server where api is deployed.
